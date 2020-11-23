@@ -1,0 +1,9 @@
+Good: (0-50) Air Quality is satisfactory, and air pollution poses little or no risk.
+
+Moderate: (51-100) Air Quality is acceptable, however for some pollutants there may be a moderate health concern for a very small number of people.
+
+USG: (101-150) Although general public is not likely to be affected at this AQI range, people with lung diseas, older adults, and children are at greater risk.
+
+Very Unhealthy: (201-300: Health Alert: Everyone may experience serious health effects.
+
+Hazardous (301-500) Health Warnings of emergency conditions.  The entire population is more likely to be affected.

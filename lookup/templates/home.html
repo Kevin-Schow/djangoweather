@@ -11,32 +11,13 @@
 		There was an error.
 	{% else %}
 
-<div class="jumbotron">
+<div class="jumbotron {{ category_color }}">
 	  <h1 class="display-4">{{ api.0.Category.Name }}</h1>
 	  <p class="lead">{{ api.0.ReportingArea }}<br/> Air  Quality: {{ api.0.AQI }}</p>
-	  <hr class="my-4">
-
-	{% if api.0.Category.Name == 'Good' %}
-			<p>(0-50) Air Quality is satisfactory, and air pollution poses little or no risk.</p>
-
-	{% elif api.0.Category.Name == 'Moderate' %}
-			<p>(51-100) Air Quality is satisfactory, and air pollution poses little or no risk.</p>
-
-	{% elif api.0.Category.Name == 'USG' %}
-			<p>(101-150) Although general public is not likely to be affected at this AQI range, people with lung diseas, older adults, and children are at greater risk.
-</p>
-
-	{% elif api.0.Category.Name == 'Very Unhealthy' %}
-			<p>(201-300) Health Alert: Everyone may experience serious health effects.
-</p>
-
-	{% elif api.0.Category.Name == 'Hazardous' %}
-			<p>(301-500) Health Warnings of emergency conditions.  The entire population is more likely to be affected.</p>
+	  
+	  <p>{{ category_description }}</p>
 
 
-
-
-	{% endif %}
 
 	</div>
 
